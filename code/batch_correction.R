@@ -36,7 +36,11 @@ for (i in seq_along(thresholds)){
   features_retained[i]<-sum(neg$detect_prop>=thresholds[i])
 }
 
+png("HOME_MIREC_metabolomics_repo\\output\\features_retained.png",type="cairo")
+
 plot(thresholds,features_retained,xlab="Detection cutoff",ylab="Features retained")
+
+dev.off()
 
 #Create non-detect flag---
 neg_w_flg<-neg %>% 
