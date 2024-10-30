@@ -19,7 +19,7 @@ setwd("C:/Users/afossa/Brown Dropbox/Alan Fossa/HOME_MIREC_metabolomics")
 
 #saveRDS(neg_wide,file="data\\IDSL.IPA_NEG\\peak_alignment\\peak_area.rds")
 
-neg_long<-readRDS("data\\peak_area.rds")
+neg_long<-readRDS("data\\IDSL.IPA_NEG\\peak_alignment\\peak_area.rds")
 
 row.names(neg_long)<-paste(neg_long$mz,neg_long$RT,sep="__")#Set peak identifier as row names.
 
